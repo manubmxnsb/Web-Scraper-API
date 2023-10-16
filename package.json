@@ -1,0 +1,27 @@
+{
+  "name": "web-scraper-wsa-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel serve src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@parcel/core": "^2.10.0",
+    "axios": "^1.5.1",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "puppeteer": "^21.3.8",
+    "xmldom": "^0.6.0",
+    "xpath": "^0.0.33"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.0",
+    "parcel": "^2.10.0"
+  }
+}

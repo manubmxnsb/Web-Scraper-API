@@ -1,0 +1,37 @@
+const sentimentScore = {
+    1 : ["good", "blissful","serene","positive","beautiful","uplift","enchanting","satisfaction","peace",
+    "great","well","support","calm","radiant","vibrant","joy","beauty","warm","bright","flowers","sun"],
+    0 : ["bad", "not","rot","overwhelming","noise","hefty","negative","stress","chaos","disappoint","junk",
+    "avoid","trap","issue","disease","unhealthy","disaster","waste","harm"]
+};
+
+function getSentiment(words) {
+    let result = 0;
+    let count = 0;
+    words.forEach((word) => {
+        for(i=0;i<2;i++) {
+            sentimentScore[i].forEach((sentiment) => {
+                if ((sentiment.toString().startsWith(word)) &&
+                    (sentiment.toString().length < word.length + 3) &&
+                    (word.length > 2)) {
+                    result += i;
+                    count += 1;
+                }
+            })
+        }
+    })
+    let score = result/count;
+    if((score > 0.3) && (score < 0.7)) {
+        return "neutral";
+    }
+    else {
+        if(score > 0.7) {
+            return "positive";
+        }
+        else {
+            return "negative";
+        }
+    }
+}
+
+module.exports = { getSentiment };

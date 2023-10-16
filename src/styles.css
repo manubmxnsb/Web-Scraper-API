@@ -1,0 +1,38 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+.container {
+  margin-top: 5vh;
+  align-items: center;
+  justify-content: center;
+}
+.container .header {
+  display: flex;
+}
+.container .header .header-text {
+  align-items: center;
+  justify-content: center;
+  margin-left: 35vw;
+  margin-bottom: 4vh;
+}
+.container .header .header-text .title {
+  font-size: 24px;
+}
+.container .header .header-text .description {
+  font-size: 14px;
+  margin-top: -2vh;
+  margin-left: 0.5vw;
+}
+.container button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 2vh;
+}
+.container .buttons {
+  display: flex;
+}
+
+pre {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(47, 47, 47);
+  color: #fff;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
